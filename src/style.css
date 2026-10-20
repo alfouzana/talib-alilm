@@ -1,0 +1,11 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand: #14532d;
+  --color-brand-dark: #0b3b1f;
+  --color-gold: #b8893b;
+  --font-sans: "Tajawal", ui-sans-serif, system-ui, sans-serif;
+}
+
+html { scroll-behavior: smooth; }
+.chip[aria-pressed="true"] { background: var(--color-brand); color: #fff; border-color: var(--color-brand); }

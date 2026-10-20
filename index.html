@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>دليل طالب العلم — النافذة الموحدة لطلب العلم الشرعي</title>
+    <meta name="description" content="دليل يربط طالب العلم بالجمعيات والمعاهد القرآنية في المملكة، وبالبرامج والأكاديميات الشرعية المعتمدة عن بُعد." />
+    <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&family=Amiri:wght@700&display=swap" rel="stylesheet" />
+  </head>
+  <body class="bg-stone-50 text-slate-900 antialiased">
+    <div class="bg-gold/15 py-2 text-center text-xs font-medium text-brand-dark">نسخة تجريبية — البيانات المعروضة أمثلة للتوضيح فقط</div>
+
+    <!-- NAV -->
+    <header class="sticky top-0 z-50 border-b border-stone-200 bg-white/90 backdrop-blur">
+      <div class="mx-auto flex max-w-6xl items-center justify-between px-4 py-3">
+        <a href="#" class="flex items-center gap-2 text-lg font-extrabold text-brand">
+          <img src="./favicon.svg" alt="" class="h-9 w-9" /> دليل طالب العلم
+        </a>
+        <nav class="absolute inset-x-0 top-full hidden flex-col gap-4 border-b border-stone-200 bg-white p-4 text-sm font-medium md:static md:flex md:flex-row md:gap-7 md:border-0 md:bg-transparent md:p-0" data-nav-menu>
+          <a href="#hudori" class="hover:text-brand">الحضوري</a>
+          <a href="#remote" class="hover:text-brand">عن بُعد</a>
+          <a href="#ads" class="hover:text-brand">دروس اليوم</a>
+          <a href="#tools" class="hover:text-brand">التطبيقات</a>
+          <a href="#manhaj" class="hover:text-brand">المنهجيات</a>
+          <a href="#istishara" class="hover:text-brand">الاستشارات</a>
+        </nav>
+        <a href="#join" class="hidden rounded-full bg-brand px-5 py-2 text-sm font-bold text-white hover:bg-brand-dark md:inline-block">أضف جهتك</a>
+        <button class="md:hidden" data-nav-toggle aria-label="القائمة">
+          <svg class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+      </div>
+    </header>
+
+    <!-- HERO -->
+    <section class="bg-brand text-white">
+      <div class="mx-auto max-w-6xl px-4 py-16 text-center md:py-24">
+        <p class="font-['Amiri'] text-xl text-amber-200 md:text-2xl">«ومن سلك طريقًا يلتمس فيه علمًا سهّل الله له به طريقًا إلى الجنة»</p>
+        <h1 class="mt-6 text-3xl font-extrabold leading-tight md:text-5xl">طريقك إلى طلب العلم الشرعي يبدأ من هنا</h1>
+        <p class="mx-auto mt-5 max-w-2xl text-lg text-emerald-100">دليل موحّد يجمع الجمعيات والمعاهد القرآنية في مدينتك، والبرامج والأكاديميات الشرعية المعتمدة عن بُعد لكل طالب في العالم.</p>
+        <form class="mx-auto mt-8 flex max-w-xl gap-2 rounded-full bg-white p-1.5" onsubmit="event.preventDefault();document.getElementById('hudori').scrollIntoView()">
+          <input id="q" class="min-w-0 flex-1 rounded-full px-4 text-slate-900 outline-none" placeholder="ابحث: تحفيظ، متون، عقيدة، الرياض..." />
+          <button class="rounded-full bg-gold px-6 py-2.5 font-bold text-white">بحث</button>
+        </form>
+        <div class="mx-auto mt-10 grid max-w-3xl grid-cols-2 gap-4 md:grid-cols-4">
+          <div class="rounded-xl bg-white/10 p-4"><div class="text-2xl font-extrabold">13</div><div class="text-sm text-emerald-100">منطقة إدارية</div></div>
+          <div class="rounded-xl bg-white/10 p-4"><div class="text-2xl font-extrabold">+120</div><div class="text-sm text-emerald-100">جهة حضورية</div></div>
+          <div class="rounded-xl bg-white/10 p-4"><div class="text-2xl font-extrabold">+60</div><div class="text-sm text-emerald-100">برنامج عن بُعد</div></div>
+          <div class="rounded-xl bg-white/10 p-4"><div class="text-2xl font-extrabold">يوميًا</div><div class="text-sm text-emerald-100">إعلانات الدروس</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TWO SECTIONS -->
+    <section class="mx-auto -mt-8 grid max-w-6xl gap-4 px-4 md:grid-cols-2">
+      <a href="#hudori" class="rounded-2xl border border-stone-200 bg-white p-6 shadow-sm hover:border-brand">
+        <div class="text-3xl">🕌</div>
+        <h2 class="mt-3 text-xl font-extrabold text-brand">القسم الحضوري</h2>
+        <p class="mt-2 text-slate-600">الجمعيات العلمية والمجمعات والمعاهد القرآنية ومناشطها، حسب منطقتك ومحافظتك داخل المملكة.</p>
+      </a>
+      <a href="#remote" class="rounded-2xl border border-stone-200 bg-white p-6 shadow-sm hover:border-brand">
+        <div class="text-3xl">🌍</div>
+        <h2 class="mt-3 text-xl font-extrabold text-brand">القسم الرقمي — عن بُعد</h2>
+        <p class="mt-2 text-slate-600">البرامج العلمية والأكاديميات الشرعية والمجالس الحية المرخّصة والمعتمدة، لكل طالب في العالم.</p>
+      </a>
+    </section>
+
+    <!-- HUDORI -->
+    <section id="hudori" class="mx-auto max-w-6xl px-4 py-16">
+      <h2 class="text-2xl font-extrabold md:text-3xl">الدليل الحضوري</h2>
+      <p class="mt-2 text-slate-600">اختر منطقتك ونوع الجهة، وتظهر لك الأقرب مع موقعها على الخريطة.</p>
+      <div class="mt-6 flex flex-wrap gap-2" data-filter="region">
+        <button class="chip rounded-full border border-stone-300 bg-white px-4 py-1.5 text-sm" aria-pressed="true" data-v="">كل المناطق</button>
+        <button class="chip rounded-full border border-stone-300 bg-white px-4 py-1.5 text-sm" data-v="الرياض">الرياض</button>
+        <button class="chip rounded-full border border-stone-300 bg-white px-4 py-1.5 text-sm" data-v="مكة المكرمة">مكة المكرمة</button>
+        <button class="chip rounded-full border border-stone-300 bg-white px-4 py-1.5 text-sm" data-v="المدينة المنورة">المدينة المنورة</button>
+        <button class="chip rounded-full border border-stone-300 bg-white px-4 py-1.5 text-sm" data-v="القصيم">القصيم</button>
+        <button class="chip rounded-full border border-stone-300 bg-white px-4 py-1.5 text-sm" data-v="الشرقية">الشرقية</button>
+      </div>
+      <div class="mt-3 flex flex-wrap gap-2" data-filter="type">
+        <button class="chip rounded-full border border-stone-300 bg-white px-4 py-1.5 text-sm" aria-pressed="true" data-v="">كل الأنواع</button>
+        <button class="chip rounded-full border border-stone-300 bg-white px-4 py-1.5 text-sm" data-v="جمعية تحفيظ">جمعيات التحفيظ</button>
+        <button class="chip rounded-full border border-stone-300 bg-white px-4 py-1.5 text-sm" data-v="معهد قرآني">المعاهد القرآنية</button>
+        <button class="chip rounded-full border border-stone-300 bg-white px-4 py-1.5 text-sm" data-v="جمعية علمية">الجمعيات العلمية</button>
+        <button class="chip rounded-full border border-stone-300 bg-white px-4 py-1.5 text-sm" data-v="مجمع">المجمعات</button>
+      </div>
+      <div class="mt-8 grid gap-6 lg:grid-cols-5">
+        <div class="grid content-start gap-4 sm:grid-cols-2 lg:col-span-3" id="places"></div>
+        <div class="overflow-hidden rounded-2xl border border-stone-200 bg-white lg:col-span-2">
+          <iframe title="الخريطة" class="h-80 w-full lg:h-full lg:min-h-[28rem]" loading="lazy" src="https://www.openstreetmap.org/export/embed.html?bbox=34.5%2C16.3%2C55.7%2C32.2&layer=mapnik"></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- REMOTE -->
+    <section id="remote" class="bg-white py-16">
+      <div class="mx-auto max-w-6xl px-4">
+        <h2 class="text-2xl font-extrabold md:text-3xl">الدليل الرقمي — عن بُعد</h2>
+        <p class="mt-2 text-slate-600">برامج مرخّصة ومعتمدة فقط، مصنّفة حسب نوعها ومستواها.</p>
+        <div class="mt-6 flex flex-wrap gap-2" data-filter="cat">
+          <button class="chip rounded-full border border-stone-300 bg-white px-4 py-1.5 text-sm" aria-pressed="true" data-v="">الكل</button>
+          <button class="chip rounded-full border border-stone-300 bg-white px-4 py-1.5 text-sm" data-v="أكاديمية">أكاديميات شرعية</button>
+          <button class="chip rounded-full border border-stone-300 bg-white px-4 py-1.5 text-sm" data-v="برنامج">برامج علمية</button>
+          <button class="chip rounded-full border border-stone-300 bg-white px-4 py-1.5 text-sm" data-v="مجلس">مجالس حية</button>
+          <button class="chip rounded-full border border-stone-300 bg-white px-4 py-1.5 text-sm" data-v="مقرأة">مقارئ إلكترونية</button>
+        </div>
+        <div class="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3" id="programs"></div>
+      </div>
+    </section>
+
+    <!-- ADS -->
+    <section id="ads" class="mx-auto max-w-6xl px-4 py-16">
+      <div class="flex items-end justify-between">
+        <div>
+          <h2 class="text-2xl font-extrabold md:text-3xl">إعلانات الدروس اليومية</h2>
+          <p class="mt-2 text-slate-600">دروس اليوم حضوريًا وعن بُعد، تتحدث يوميًا.</p>
+        </div>
+        <span class="rounded-full bg-gold/15 px-3 py-1 text-sm font-bold text-brand-dark">اليوم</span>
+      </div>
+      <div class="mt-8 divide-y divide-stone-200 overflow-hidden rounded-2xl border border-stone-200 bg-white" id="ads-list"></div>
+    </section>
+
+    <!-- SUPPORT ICONS -->
+    <section id="tools" class="bg-white py-16">
+      <div class="mx-auto max-w-6xl px-4">
+        <h2 class="text-2xl font-extrabold md:text-3xl">أدوات مساندة لطالب العلم</h2>
+        <div class="mt-8 grid grid-cols-2 gap-4 md:grid-cols-5">
+          <a href="#tools" class="rounded-2xl border border-stone-200 p-5 text-center hover:border-brand"><div class="text-3xl">📖</div><div class="mt-2 font-bold">التطبيقات القرآنية</div><p class="mt-1 text-xs text-slate-500">المصاحف والتفسير والتلاوة والمراجعة</p></a>
+          <a href="#tools" class="rounded-2xl border border-stone-200 p-5 text-center hover:border-brand"><div class="text-3xl">📚</div><div class="mt-2 font-bold">التطبيقات العلمية</div><p class="mt-1 text-xs text-slate-500">المكتبات والمتون والشروح</p></a>
+          <a href="#tools" class="rounded-2xl border border-stone-200 p-5 text-center hover:border-brand"><div class="text-3xl">💻</div><div class="mt-2 font-bold">التطبيقات التقنية</div><p class="mt-1 text-xs text-slate-500">أدوات تنظيم الحفظ والبحث</p></a>
+          <a href="#manhaj" class="rounded-2xl border border-stone-200 p-5 text-center hover:border-brand"><div class="text-3xl">🧭</div><div class="mt-2 font-bold">المنهجيات العلمية</div><p class="mt-1 text-xs text-slate-500">وصايا العلماء في طريق الطلب</p></a>
+          <a href="#istishara" class="col-span-2 rounded-2xl border border-stone-200 p-5 text-center hover:border-brand md:col-span-1"><div class="text-3xl">💬</div><div class="mt-2 font-bold">الاستشارات العلمية</div><p class="mt-1 text-xs text-slate-500">طرق التواصل مع المشايخ</p></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- MANHAJ -->
+    <section id="manhaj" class="mx-auto max-w-6xl px-4 py-16">
+      <h2 class="text-2xl font-extrabold md:text-3xl">المنهجيات العلمية</h2>
+      <p class="mt-2 text-slate-600">مكتبة تجمع منهجيات أهل العلم ووصاياهم لطالب العلم، مرتبة حسب المرحلة.</p>
+      <div class="mt-8 grid gap-4 md:grid-cols-3">
+        <div class="rounded-2xl border border-stone-200 bg-white p-6"><span class="text-xs font-bold text-gold">المرحلة الأولى</span><h3 class="mt-2 text-lg font-bold">وصيتي لك يا طالب العلم</h3><p class="mt-2 text-sm text-slate-600">توجيهات في بداية الطريق: النية، والتدرج، وملازمة الشيوخ.</p></div>
+        <div class="rounded-2xl border border-stone-200 bg-white p-6"><span class="text-xs font-bold text-gold">المتون</span><h3 class="mt-2 text-lg font-bold">سلّم المتون العلمية</h3><p class="mt-2 text-sm text-slate-600">ترتيب المتون في العقيدة والفقه والحديث والنحو من المبتدئ إلى المتقدم.</p></div>
+        <div class="rounded-2xl border border-stone-200 bg-white p-6"><span class="text-xs font-bold text-gold">الحفظ</span><h3 class="mt-2 text-lg font-bold">منهجية حفظ القرآن والمراجعة</h3><p class="mt-2 text-sm text-slate-600">طرق مجرّبة لتثبيت الحفظ وتنظيم الورد اليومي.</p></div>
+      </div>
+    </section>
+
+    <!-- ISTISHARA -->
+    <section id="istishara" class="bg-brand py-16 text-white">
+      <div class="mx-auto max-w-6xl px-4">
+        <h2 class="text-2xl font-extrabold md:text-3xl">الاستشارات العلمية</h2>
+        <p class="mt-2 text-emerald-100">عندك إشكال علمي؟ هذي الجهات والحسابات المعتمدة للتواصل مع المشايخ.</p>
+        <div class="mt-8 grid gap-4 md:grid-cols-3">
+          <div class="rounded-2xl bg-white/10 p-6"><h3 class="text-lg font-bold">استشارات علمية عامة</h3><p class="mt-2 text-sm text-emerald-100">مشاريع مثل مشروع جلاء العلمي للإجابة عن الإشكالات العلمية.</p></div>
+          <div class="rounded-2xl bg-white/10 p-6"><h3 class="text-lg font-bold">الاستشارات القرآنية</h3><p class="mt-2 text-sm text-emerald-100">في الحفظ والتجويد والقراءات والإجازات.</p></div>
+          <div class="rounded-2xl bg-white/10 p-6"><h3 class="text-lg font-bold">الاستشارات الحديثية</h3><p class="mt-2 text-sm text-emerald-100">في التخريج والأسانيد ومنهج دراسة الحديث.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- JOIN -->
+    <section id="join" class="mx-auto max-w-4xl px-4 py-16 text-center">
+      <h2 class="text-2xl font-extrabold md:text-3xl">تمثّل جمعية أو أكاديمية؟</h2>
+      <p class="mx-auto mt-3 max-w-xl text-slate-600">أضف جهتك وبرامجك وإعلانات دروسك، لتصل لكل طالب يبحث عن العلم.</p>
+      <a href="#join" class="mt-6 inline-block rounded-full bg-brand px-8 py-3 font-bold text-white hover:bg-brand-dark">طلب إضافة جهة</a>
+    </section>
+
+    <footer class="border-t border-stone-200 bg-white py-8 text-center text-sm text-slate-500">
+      © <span data-year></span> دليل طالب العلم
+    </footer>
+
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>
